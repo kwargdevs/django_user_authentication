@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>User Accounts</title>
+</head>
+<body>
+
+    {% if user.is_authenticated %}
+    <p> Hello {{user.username}} </p>
+    <a href="{% url 'users:logout' %}">Logout</a>
+    {% else %}
+    <a href="{% url 'users:login' %}">Login</a>
+    <a href="{% url 'users:register' %}">Register</a>
+    {% endif %}
+
+</body>
+
+
+</html>
