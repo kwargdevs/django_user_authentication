@@ -2,3 +2,4 @@ venv/
 testapp/__pycache__/
 users/__pycache__/
 django_project/__pycache__/
+resources/node_modules/

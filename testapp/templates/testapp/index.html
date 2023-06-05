@@ -1,8 +1,6 @@
-<html>
-<head>
-    <title>User Accounts</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
 
     {% if user.is_authenticated %}
     <p> Hello {{user.username}} </p>
@@ -11,8 +9,5 @@
     <a href="{% url 'users:login' %}">Login</a>
     <a href="{% url 'users:register' %}">Register</a>
     {% endif %}
+{% endblock content %}
 
-</body>
-
-
-</html>
