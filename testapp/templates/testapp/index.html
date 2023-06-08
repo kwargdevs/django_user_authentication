@@ -9,5 +9,11 @@
     <a href="{% url 'users:login' %}">Login</a>
     <a href="{% url 'users:register' %}">Register</a>
     {% endif %}
+
+
+    {% for article in articles  %}
+
+    <p>{{ article }}</p>
+    {% endfor %}
 {% endblock content %}
 
